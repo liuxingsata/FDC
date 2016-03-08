@@ -253,7 +253,7 @@ body {
 <body>
 
 	<%
-		if (session.getAttribute("login") == "ok")
+		if ((String)session.getAttribute("login")=="ok")
 			response.sendRedirect("index_home.jsp");
 	%>
 

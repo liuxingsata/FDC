@@ -118,7 +118,7 @@ body {
 				 	%>
 			<div class="span9">
 				<div class="table">
-				<form action="editHouseServlet" method="post">
+				<form action="editHouseServlet" method="post" enctype="multipart/form-data">
 				<input  value="<%=id %>" type="hidden" name="id" >
 					<table>
 					

@@ -112,7 +112,7 @@ body {
 				 	%>
 			<div class="span9">
 				<div class="table">
-				<form action="editHouseServlet" method="post">
+				<form action="editHouseServlet" method="post" enctype="multipart/form-data">
 				<input  value="<%=hb.getHouseowner() %>" type="hidden" name="houseowner">
 				<input  value="<%=hb.getHousephoto() %>" type="hidden" name="housephoto">
 				<input  value="<%=id %>" type="hidden" name="id" >

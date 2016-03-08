@@ -99,7 +99,7 @@ body {
 			<!--/span-->
 			<div class="span9">
 				<div class="table">
-				<form action="addHouseServlet" method="post">
+				<form action="addHouseServlet" method="post" enctype="multipart/form-data">
 					<table>
 						
 							<tr><td>房屋型号</td><td><input  class="" type="text" name="housetype" required="required"></td></tr>
@@ -107,7 +107,7 @@ body {
 							<tr><td>所在楼层</td><td><input  class="" type="text" name="housefloor" required="required"></td></tr>
 							<tr><td>房屋地址</td><td><input  class="" type="text" name="houseadd" required="required"></td></tr>
 							<tr><td>房屋所有者</td><td><input  class="" type="text" name="houseowner"></td></tr>
-							<tr><td>参考图片</td><td><input id="openfile" type="file" class="btn" name="housephoto"></td></tr>
+							<tr><td>参考图片</td><td><input  type="file" class="btn btn-primary" value="上传图片" name="housephoto"></td></tr>
 							<tr><td><button type="submit" class="btn btn-primary popover-show">确认添加</button></td><td><button type="reset" class="btn btn-warning" >重置信息</button></td></tr>
 						
 						

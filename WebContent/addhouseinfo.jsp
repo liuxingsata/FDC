@@ -100,7 +100,7 @@ body {
 			<!--/span-->
 			<div class="span9">
 				<div class="table">
-				<form action="addHouseServlet" method="post">
+				<form action="addHouseServlet" method="post" enctype="multipart/form-data">
 				<input  value="<%=session.getAttribute("uname").toString() %>" type="hidden" name="houseowner">
 					<table>
 						
@@ -108,7 +108,7 @@ body {
 							<tr><td>房屋面积</td><td><input  class="" type="text" name="housearea" required="required"></td></tr>
 							<tr><td>所在楼层</td><td><input  class="" type="text" name="housefloor" required="required"></td></tr>
 							<tr><td>房屋地址</td><td><input  class="" type="text" name="houseadd" required="required"></td></tr>
-							<tr><td>参考图片</td><td><input id="openfile" type="file" class="btn btn-primary" value="上传图片"></td></tr>
+							<tr><td>参考图片</td><td><input  type="file" class="btn btn-primary" value="上传图片" name="housephoto"></td></tr>
 							<tr><td><button type="submit" class="btn btn-primary popover-show">确认添加</button></td><td><button type="reset" class="btn btn-warning" >重置信息</button></td></tr>
 						
 						

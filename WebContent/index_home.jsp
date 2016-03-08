@@ -298,7 +298,7 @@ else{
 
 								<ul class="dropdown-menu">
 									<%
-										if (session.getAttribute("admin") == "false") {
+										if (session.getAttribute("admin").equals("false")) {
 											out.print("<li><a href='personinfo.jsp'>基本信息</a></li>");
 											out.print("<li><a href='houseinfo.jsp'>房产信息</a></li>");
 											out.print("<li><a href='bbsinfo.jsp'>发言信息</a></li>");

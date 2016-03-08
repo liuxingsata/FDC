@@ -6,7 +6,7 @@
 <head>
 <%
 	String url="";
-	if(session.getAttribute("admin")=="false"){url="houseinfo.jsp";}else{url="admin/housem.jsp";}
+	if(session.getAttribute("admin").equals("false")){url="houseinfo.jsp";}else{url="admin/housem.jsp";}
 %>
 <meta charset="utf-8">
 <title>房地产-通知</title>
